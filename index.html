@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanvantari Bot</title>
+    <style>
+        /* Improved video background styles */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 58, 138, 0.5);
+            z-index: 0;
+        }
+
+        /* Your original styles with video compatibility */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            z-index: 1;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-box {
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 30px;
+            color: #2563eb;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="video-background" autoplay loop muted>
+        <source src="DNA Strand Background Graphic 1 Hour Loop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="overlay"></div>
+
+    <!-- Your content -->
+    <div class="container">
+        <h1>Welcome to Dhanvantari Bot</h1>
+        <p>Your AI-powered health assistant for symptom checking, medication reminders, and more.</p>
+        <div class="features">
+            <div class="feature-box">
+                <div class="icon">❤️</div>
+                <h2>Symptom Checker</h2>
+                <p>Get quick insights into possible conditions based on symptoms.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">💊</div>
+                <h2>Medication Suggestions</h2>
+                <p>Receive recommended medicines for minor symptoms.</p>
+            </div>
+            <div class="feature-box">
+                <div class="icon">📅</div>
+                <h2>Medication Reminders</h2>
+                <p>Never miss your dose with scheduled reminders.</p>
+            </div>
+        </div>
+        <button class="btn">Get Started</button>
+    </div>
+
+</body>
+</html>
